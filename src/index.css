@@ -117,6 +117,14 @@ body {
   font-weight: bold;
 }
 
+/*
+ * AboutMe Image
+ */
+
+.img-container {
+  height: auto;
+  width: 50%;
+}
 
 /*
  * Footer
@@ -133,15 +141,6 @@ body {
  */
 
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -151,6 +150,10 @@ body {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  /* Pad the cover image */
+  .img-container {
+    padding-top: 20px;
   }
 }
 
