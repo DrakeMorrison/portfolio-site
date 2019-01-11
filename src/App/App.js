@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {Route, BrowserRouter, Switch}  from 'react-router-dom';
 
-import './App.css';
-
 import AboutMe from '../components/AboutMe/AboutMe';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
