@@ -27,7 +27,7 @@ class AboutMe extends React.Component {
         <div className='inner cover'>
 
           <div className='img-container center-block'>
-            <img src="https://github.com/DrakeMorrison/portfolio-site/raw/master/screenshots/2018_12_8_E7_00365_1.jpg" className="img-responsive img-rounded" alt="Drake Morrison"/>
+            <img src="https://github.com/DrakeMorrison/portfolio-site/raw/master/media/2018_12_8_E7_00365_1.jpg" className="img-responsive img-rounded" alt="Drake Morrison"/>
           </div>
 
           <h1 className='cover-heading'>Hello!</h1>
