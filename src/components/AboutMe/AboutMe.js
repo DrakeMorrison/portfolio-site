@@ -1,7 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import bgHelper from '../../bgHelper';
 
 class AboutMe extends React.Component {
+
+  componentDidMount() {
+    bgHelper('https://github.com/DrakeMorrison/portfolio-site/raw/master/media/CT%2014.jpg');
+  }
+
   render () {
     return (
       <div className='AboutMe'>
@@ -38,12 +44,6 @@ class AboutMe extends React.Component {
             <br /><br /> Drake is a person who is deeply interested in “why?” Finding answers to those questions is a lifelong adventure and something that enhances both his professional and personal pursuits while bringing value to those around him. </p>
           <p className='lead'><Link to='/projects' className='btn btn-lg btn-default'>See what I built!</Link></p>
 
-        </div>
-
-        <div className='mastfoot'>
-          <div className='inner'>
-            <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          </div>
         </div>
 
       </div>
