@@ -32,7 +32,7 @@ class Contact extends React.Component {
 
         <div className='inner cover'>
 
-          <img src="https://github.com/DrakeMorrison/portfolio-site/raw/master/screenshots/2018_12_8_E7_00365_1.jpg" class="img-responsive img-circle" alt="Drake Morrison"/>
+          <img src="https://github.com/DrakeMorrison/portfolio-site/raw/master/screenshots/2018_12_8_E7_00365_1.jpg" className="img-responsive img-circle" alt="Drake Morrison"/>
 
           <h1 className='cover-heading'>Hello!</h1>
           <p className='lead'>Drake Morrison is a Full Stack Software Developer who enjoys exploring the design of problem-solving strategies. Drake values simple, clear, and concise solutions to problems while working in a collaborative team environment. He loves to discover new ideas connected to the process of designing and crafting software.
