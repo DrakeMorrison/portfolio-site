@@ -1,7 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import bgHelper from '../../bgHelper';
 
 class Projects extends React.Component {
+
+  componentDidMount() {
+    bgHelper('https://github.com/DrakeMorrison/portfolio-site/raw/master/media/NH%2011.jpg');
+  }
+
   render () {
     return (
       <div className='AboutMe'>
@@ -14,8 +20,8 @@ class Projects extends React.Component {
             <nav>
               <ul className='nav masthead-nav'>
 
-                <li className='active'><Link to='/'>About Me</Link></li>
-                <li><Link to='/projects'>Projects</Link></li>
+                <li><Link to='/'>About Me</Link></li>
+                <li className='active'><Link to='/projects'>Projects</Link></li>
                 <li><Link to='/contact'>Contact</Link></li>
 
               </ul>
@@ -26,7 +32,7 @@ class Projects extends React.Component {
 
         <div className='inner cover'>
 
-          <img src="https://github.com/DrakeMorrison/portfolio-site/raw/master/screenshots/2018_12_8_E7_00365_1.jpg" class="img-responsive img-circle" alt="Drake Morrison"/>
+          <img src="https://github.com/DrakeMorrison/portfolio-site/raw/master/screenshots/2018_12_8_E7_00365_1.jpg" className="img-responsive img-circle" alt="Drake Morrison"/>
 
           <h1 className='cover-heading'>Hello!</h1>
           <p className='lead'>Drake Morrison is a Full Stack Software Developer who enjoys exploring the design of problem-solving strategies. Drake values simple, clear, and concise solutions to problems while working in a collaborative team environment. He loves to discover new ideas connected to the process of designing and crafting software.
@@ -36,12 +42,6 @@ class Projects extends React.Component {
             <br /> Drake is a person who is deeply interested in “why?” Finding answers to those questions is a lifelong adventure and something that enhances both his professional and personal pursuits while bringing value to those around him. </p>
           <p className='lead'><Link to='/projects' className='btn btn-lg btn-default'>See what I built!</Link></p>
 
-        </div>
-
-        <div className='mastfoot'>
-          <div className='inner'>
-            <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          </div>
         </div>
 
       </div>

@@ -14,9 +14,9 @@ class Contact extends React.Component {
             <nav>
               <ul className='nav masthead-nav'>
 
-                <li className='active'><Link to='/'>About Me</Link></li>
+                <li><Link to='/'>About Me</Link></li>
                 <li><Link to='/projects'>Projects</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li className='active'><Link to='/contact'>Contact</Link></li>
 
               </ul>
             </nav>
