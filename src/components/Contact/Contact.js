@@ -1,7 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import bgHelper from '../../bgHelper';
 
 class Contact extends React.Component {
+
+  componentDidMount() {
+    bgHelper('https://github.com/DrakeMorrison/portfolio-site/raw/master/media/TopOfKatahdin.jpg');
+  }
+
   render () {
     return (
       <div className='AboutMe'>
