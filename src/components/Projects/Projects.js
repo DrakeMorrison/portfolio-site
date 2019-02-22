@@ -1,15 +1,24 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import bgHelper from '../../bgHelper';
+import projectRequests from '../../firebaseRequests/projectRequests';
 
 class Projects extends React.Component {
   state = {
     projects: []
   }
 
+  getProjects = () => {
+    projectRequests.getRequest()
+      .then(res => {
+        this.setState({ projects: res });
+      })
+      .catch(console.error.bind(console));
+  }
+
   componentDidMount() {
     bgHelper('https://github.com/DrakeMorrison/portfolio-site/raw/master/media/NH%2011.jpg');
-
+    this.getProjects();
   }
 
   render () {

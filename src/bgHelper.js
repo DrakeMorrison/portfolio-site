@@ -1,8 +1,8 @@
 const changeBackground = (backgroundUrl) => {
+  // get image tag
   const imgTag = document.getElementsByClassName('bg')[0];
 
-  console.error('background set');
-
+  // set image source
   imgTag.src = backgroundUrl;
 }
 

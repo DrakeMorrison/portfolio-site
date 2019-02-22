@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "title": "Movie History",
+      "thumbnail": "https://github.com/DrakeMorrison/movie-history/raw/master/screenshots/mh-movies.png",
+      "description": "This is a web app that allows you to search for movies you want to watch and save it to a wishlist that is saved for your user.",
+      "url": "https://movie-history-99711.firebaseapp.com",
+      "github": "https://github.com/DrakeMorrison/movie-history"
+    },
+    {
+      "title": "Local Weather",
+      "thumbnail": "https://github.com/DrakeMorrison/local-weather/raw/master/screenshots/current-weather.png",
+      "description": "This is a simple weather app that allows a user to save forecasts and indicate their scariness.",
+      "url": "https://simple-weather-app-11afe.firebaseapp.com/",
+      "github": "https://github.com/DrakeMorrison/local-weather"
+
+    }
+  ]
+}
