@@ -1,6 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import bgHelper from '../../bgHelper';
+import React, { Fragment } from 'react';
 import projectRequests from '../../firebaseRequests/projectRequests';
 import Slider from 'react-slick';
 
@@ -18,7 +16,6 @@ class Projects extends React.Component {
   }
 
   componentDidMount() {
-    bgHelper('https://github.com/DrakeMorrison/portfolio-site/raw/master/media/NH%2011.jpg');
     this.getProjects();
   }
 
@@ -87,35 +84,11 @@ class Projects extends React.Component {
     };
 
     return (
-      <div className='AboutMe'>
-
-        <div className='masthead clearfix'>
-          <div className='inner'>
-
-            <h3 className='masthead-brand'>Drake Morrison</h3>
-
-            <nav>
-              <ul className='nav masthead-nav'>
-
-                <li><Link to='/'>About Me</Link></li>
-                <li className='active'><Link to='/projects'>Projects</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
-
-              </ul>
-            </nav>
-
-          </div>
-        </div>
-
-        <div className='inner cover'>
-
-          <Slider {...settings}>
-            {projectCards}
-          </Slider>
-
-        </div>
-
-      </div>
+      <Fragment>
+        <Slider {...settings}>
+          {projectCards}
+        </Slider>
+      </Fragment>
     );
   };
 }
